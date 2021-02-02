@@ -54,7 +54,7 @@ h3 {
 	font-weight: 700;
 	letter-spacing: 0.25px;
 	border-radius: 50px;
-	transition: color, background 0.5s;
+	transition color, background : 0.5s;
 }
 
 
@@ -456,7 +456,7 @@ header {
 
 .carousel-indicators .active {
 	background-color: #485563;
-}	
+}
 
 .carousel-indicators li{
 	background-color: #485563;
@@ -793,7 +793,7 @@ header {
   height: 100%;
 }
 
-.marker {
+/*.marker {
 	display: inline-block;
 	width: 76px;
 	height: 105px;
@@ -801,7 +801,7 @@ header {
 	top: 42%;
 	left: 45%;
 	background: url("../img/z.png")no-repeat 30px 25px, url("../img/circle.png")no-repeat 15px 15px, url("../img/marker.png")no-repeat;
-}
+}*/
 
 
 footer {
@@ -1116,4 +1116,15 @@ footer {
 		top: 34%;
 		left: 42%;
 	}
+}
+
+#picture {
+	width: 65px;
+  height: 65px;
+  border-radius: 50px;
+}
+
+#name {
+	font-family: sans-serif;
+	font-size: 17px;
 }
