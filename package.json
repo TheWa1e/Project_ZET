@@ -1,5 +1,5 @@
 {
-  "name": "login",
+  "name": "zet",
   "version": "1.0.0",
   "description": "login authentication",
   "main": "index.js",
@@ -17,7 +17,6 @@
     "jsonwebtoken": "^7.3.0",
     "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
-    "nodemailer": "^6.4.17",
     "passport": "^0.4.1",
     "passport-auth0": "^1.4.0",
     "passport-local": "^1.0.0",
