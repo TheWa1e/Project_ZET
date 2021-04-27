@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "vuevue-server-renderer": "^2.6.12",
+    "vue-server-renderer": "^2.6.12",
     "@auth0/auth0-spa-js": "^1.13.6",
     "body-parser": "^1.17.1",
     "connect-redis": "^5.0.0",
