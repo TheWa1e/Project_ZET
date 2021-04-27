@@ -7,45 +7,46 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="/img/z.png" type="image/png">
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-   <!--<link rel="stylesheet" href="css/bootstrap_css/bootstrap.css">-->
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/button.css">
 </head>
 <body>
    <style>
       .hidden {
-        display: none;
-     }
-  </style>
-  <header>
+       display: none;
+    }
+ </style>
+ <header>
    <div class="nav-wrapper">
-      <nav class="main-nav">
 
-         <div id="btncontainerin">
-          <button  id="btn-login" class="show" onclick="login()">
-           <span class="circle" aria-hidden="true">
+      <div class="hidden" id="gated-content">
+         <label>
+            <img id="picture" src="" alt="logo">
+            <pre id="name"></pre>
+            <pre id="ipt-user-profile"></pre>
+         </label>
+         <div id="btncontainerout" class="hidden">
+           <button  id="btn-logout" class="hidden" onclick="logout()">
+             <span class="circle" aria-hidden="true">
+               <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Log out</span>
+         </button>
+      </div>
+   </div>
+   <nav class="main-nav">
+
+      <div id="btncontainerin">
+        <button  id="btn-login" class="show" onclick="login()">
+          <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
          </span>
          <span class="button-text">Log in</span>
       </button>
    </div>
 
-   <div id="btncontainerout" class="hidden">
-    <button  id="btn-logout" class="hidden" onclick="logout()">
-     <span class="circle" aria-hidden="true">
-      <span class="icon arrow"></span>
-   </span>
-   <span class="button-text">Log out</span>
-</button>
-</div>
+
 </nav>
-<div class="hidden" id="gated-content">
-   <label>
-      <img id="picture" src="" alt="logo">
-      <pre id="name"></pre>
-      <pre id="ipt-user-profile"></pre>
-   </label>
-</div>
 <div class="container">
    <nav class="navbar navbar-expand{-sm|-md|-lg|-xl} navbar-dark bg-light">
       <a class="navbar-brand"><img src="img/zet.png" alt="logo"></a>
@@ -341,9 +342,9 @@
          </div>
          <div class="testimonial-bottom">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-             <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <p class="bottom__text"></p>
+              <div class="carousel-inner">
+                 <div class="carousel-item active">
+                  <p class="bottom__text"> Уровень разработки так себе, но для новичка не плохо</p>
                   <p class="bottom__title">
                      <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
                   </p>
@@ -354,7 +355,7 @@
                   </a>
                </div>
                <div class="carousel-item">
-                  <p class="bottom__text"></p>
+                  <p class="bottom__text"> Красавчик Димарик, сайт на высоте </p>
                   <p class="bottom__title">
                      <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
                   </p>
@@ -365,7 +366,7 @@
                   </a>
                </div>
                <div class="carousel-item">
-                  <p class="bottom__text"></p>
+                  <p class="bottom__text"> Сервис хорошицй, жаль только ни чего не работает</p>
                   <p class="bottom__title">
                      <img src="img/kav.png" class="mx-auto d-block" style="width: 20px; height: 100%">
                   </p>
@@ -377,14 +378,14 @@
                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="sr-only">Next</span>
-          </a>
-          <ol class="carousel-indicators">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+           </a>
+           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -651,7 +652,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 <script src="https://unpkg.com/vue-yandex-maps"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!--<script src="js/bootstrap_js/bootstrap.js"></script> -->
 <script src="js/script.js"></script>
 </body>
 </html>
