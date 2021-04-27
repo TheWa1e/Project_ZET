@@ -40,4 +40,8 @@ app.post('/controllers/send-message-controller',sendmessageController.sendmessag
 
 var request = require("request");
 
-app.listen(3000);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
